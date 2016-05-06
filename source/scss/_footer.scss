@@ -1,0 +1,28 @@
+footer {	
+	background-color: $custom_blue;
+	font-size: 90%;
+	line-height: 125%;
+	text-align: center;
+	color: white;
+	.row {
+		.links {
+			padding: 12px;
+			a {
+				padding: 2px;
+				display: block;
+			}
+		}
+		.contact {
+			padding: 12px;
+		}
+		.address {
+			padding: 12px;
+		}
+		.copyright {
+			padding: 4px;
+			text-align: center;
+			font-size: 12px;
+		}
+
+	}
+}

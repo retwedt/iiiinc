@@ -1,0 +1,42 @@
+@import "custom-bootstrap-variables";
+@import "bootstrap";
+
+
+/* PAGE SPECIFIC PARTIAL SCSS */
+
+@import "navbar";
+@import "footer";
+
+@import "home";
+@import "products";
+@import "solutions";
+@import "contact";
+
+
+.container {
+	h1 {
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+	p {
+		padding-bottom: 12px;
+	}
+}
+.pad-bottom {
+	padding-bottom: 12px;
+}
+.grey {
+	width: 100%;
+	background-color: #eeeeee;
+}
+
+
+/* GENERAL MEDIA QUERIES */
+
+@media (max-width: $screen-sm-min) {
+	// Add horizontal space around containers on phone screens
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
