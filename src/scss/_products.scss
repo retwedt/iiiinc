@@ -1,23 +1,33 @@
 #products-banner {	
-	background-image: url("../img/banner/banner.jpg");
+	background-image: url("../img/banners/products.jpg");
 	background-position: 50% 25%;
+	background-size: cover;
 	margin: 0;
+	color: white;
+	-webkit-text-shadow: 2px 2px 2px #464646;
+	-moz-text-shadow: 2px 2px 2px #464646;
+	text-shadow: 2px 2px 2px #464646;
+	height: 320px;
+	position: relative;
 	.banner-title {
 		margin: 0;
-		font-size: 48px;
+		font-size: 56px;
 		letter-spacing: 2px;
+		position: absolute;
+		bottom: 12%;
+		transform: translate(0%, -50%);
 	}
 
   	// Media queries 
 	@media (max-width: $screen-md-min) {
 		.banner-title {
-			font-size: 56px;
+			font-size: 52px;
 		}
 	}
 	@media (max-width: $screen-sm-min) {
 		// height: 600px;	
 		.banner-title {
-			font-size: 56px;
+			font-size: 48px;
 			margin: 0;
 		}
 	}

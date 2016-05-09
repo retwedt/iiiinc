@@ -3,22 +3,22 @@ $custom-blue: #262632;
 $custom-grey: #eeeeee;
 
 // Navbar
-$navbar-default-bg: $custom-blue;
-$navbar-default-color: $custom-grey;
-$navbar-default-link-color: $custom-grey;
-$navbar-default-link-active-color: $custom-grey;
-$navbar-default-link-hover-color: #fff;
-$navbar-height: 106px;
+// $navbar-default-bg: transparent;
+// $navbar-default-color: $custom-grey;
+// $navbar-default-link-color: $custom-grey;
+// $navbar-default-link-active-color: $custom-grey;
+// $navbar-default-link-hover-color: #fff;
+$navbar-height: 72px;
 $navbar-collapse-max-height: auto; // fix overflow issue in mobile navbar
 
 // Typography
-$font-family-sans-serif: "Verdana", "Geneva", "sans-serif";
-$headings-font-family: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", "serif";
+$font-family-sans-serif: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", "serif";
+$headings-font-family: "Verdana", "Geneva", "sans-serif";
 $headings-font-weight: 500;
 $font-family-base: $font-family-sans-serif;
 
 $text-color: rgb(84,84,84);
-$font-size-base: 16px;
+$font-size-base: 20px;
 
 
 // Container Sizing

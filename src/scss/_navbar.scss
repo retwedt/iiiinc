@@ -1,0 +1,150 @@
+.navbar {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin: 0;
+
+  // Classes for dynamically changing navbar with JS 
+  &.navbar-top {
+    /* transitions */
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }  
+  &.navbar-scroll {
+    background-color: $custom-blue;
+   /* transitions */
+    -webkit-transition: all 1.0s ease-out;
+    -moz-transition: all 1.0s ease-out;
+    transition: all 1.0s ease-out;
+    .container {
+      .navbar-header {
+        .navbar-brand {
+          img {
+            height: 56px;
+            width: auto;
+            /* transitions */
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+          }
+        }
+      }
+      .navbar-collapse {
+        .nav {
+          margin-top: 4px;
+          a {
+            font-size: 20px;
+            font-weight: normal;
+            color: $custom-grey;
+            -webkit-text-shadow: 2px 2px 2px #323232;
+            -moz-text-shadow: 2px 2px 2px #323232;
+            text-shadow: 2px 2px 2px #323232;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    height: 100%;
+    // Navbar collapse button
+    .navbar-header {
+      height: 100%;
+      .navbar-toggle {
+        border: none;
+        font-size: 35px;
+        margin: 24px 12px;
+        padding: 6px;
+        line-height: $navbar-height;
+        .icon-bar {
+          background-color: $custom-grey;
+        }
+      }
+      // Override the bootstrap styling for the navbar interactivity 
+      .navbar-toggle,
+      .navbar-toggle:active,
+      .navbar-toggle:hover {
+        background-color: $custom-blue;
+      }
+      .navbar-brand {
+        padding: 0;
+        img {
+          margin: 10px;
+          height: 108px;
+          width: auto;
+          /* transitions */
+          -webkit-transition: all 0.5s ease-out;
+          -moz-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+        }
+      }
+    }
+    .navbar-collapse {
+      .nav {
+        margin-top: 24px;
+        a {
+          color: $custom-grey;
+          font-size: 24px;
+          font-weight: 500;
+          -webkit-text-shadow: 2px 2px 2px #323232;
+          -moz-text-shadow: 2px 2px 2px #323232;
+          text-shadow: 2px 2px 2px #323232;
+          /* transitions */
+          -webkit-transition: all 0.5s ease-out;
+          -moz-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+            &:hover {
+              color: #fff;
+              text-decoration: underline;
+            }
+        }
+      }
+    }
+
+
+    // Media queries 
+    @media (max-width: $screen-md-min) {
+      font-size: 18px;
+    } 
+  }
+
+  // Media queries 
+  @media (max-width: $screen-sm-min) {
+    background-color: $custom-blue;
+    /* transitions */
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    .container {
+      background-color: $custom-blue;
+      .navbar-header {
+        .navbar-brand {
+          img {
+            height: 56px;
+            width: auto;
+            /* transitions */
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+          }
+        }
+      }
+      .navbar-collapse {
+        background-color: $custom-blue;
+        .nav {
+          margin-top: 4px;
+          background-color: $custom-blue;
+          a {
+            font-size: 20px;
+            font-weight: normal;
+            -webkit-text-shadow: 2px 2px 2px #323232;
+            -moz-text-shadow: 2px 2px 2px #323232;
+            text-shadow: 2px 2px 2px #323232;
+          }
+        }
+      }
+    }
+  }
+}
+

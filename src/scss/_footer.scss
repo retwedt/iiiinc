@@ -1,0 +1,43 @@
+footer {	
+	background-color: $custom_blue;
+	font-size: 90%;
+	line-height: 125%;
+	text-align: center;
+	padding: 8px;
+	color: white;
+	.row {
+		.links {
+			a {
+				color: $custom-grey;
+				padding: 2px;
+				display: block;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+		#subscribe-form {
+			input {
+				color: $custom-blue;
+			}
+		}
+		.social-links {
+			margin-top: 12px;
+			a {
+				img {
+					width: 36px;
+					height: auto;
+				}
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+		.copyright {
+			padding: 4px;
+			text-align: center;
+			font-size: 16px;
+		}
+
+	}
+}
