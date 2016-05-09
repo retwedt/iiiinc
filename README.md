@@ -1,36 +1,32 @@
-Interstate Industrial Instrumentation, Inc.
+# Interstate Industrial Instrumentation, Inc.
 
 
-Development Tools:
+## Development Tools:
 
 -	[Bootstrap](http://getbootstrap.com/)
 -	[Bower](http://bower.io/)
 -	[SASS](http://sass-lang.com/)
 -	[Gulp](http://gulpjs.com/)
 -	[Nunjucks](https://mozilla.github.io/nunjucks/)
--	LiveReload browser [extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+-	[LiveReload browser extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 
 
-Directory Structure
+## Directory Structure
 -------------------
-
 ```
-.
-├── public/               # The built website - this is what gets posted online
+├── public/							# Most recent website build
 	├── js/
 	├── css/
-	├── fonts/
-	├── images/
+	├── img/
 	└── index.html
-├── source/               # The pre-built website - SASS files mainly at the moment.
-	├── images/
+├── src/								# Source files
+	├── img/
 	├── js/
-	├── php/              # PHP for the application form
+	├── php/
 	├── scss/             # SASS files
 	└── templates/        # Nunjucks HTML templates
-	└── course-data.json
-├── bower.json            # The information on which client-side packages are needed
-├── package.json          # The information on which node packages are needed
-├── gulpfile.js           # The gulp script that defines various automation tasks 
+├── bower.json
+├── package.json
+├── gulpfile.js
 └── README.md
 ```
