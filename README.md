@@ -14,16 +14,16 @@
 ## Directory Structure
 -------------------
 ```
-├── public/			# Most recent website build
+├── public/				# Most recent website build
 	├── js/
 	├── css/
 	├── img/
 	└── index.html
-├── src/				# Source files
+├── src/					# Source files
 	├── img/
 	├── js/
 	├── php/
-	├── scss/			# SASS files
+	├── scss/				# SASS files
 	└── templates/		# Nunjucks HTML templates
 ├── bower.json
 ├── package.json
