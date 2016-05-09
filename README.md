@@ -19,12 +19,12 @@
 	├── css/
 	├── img/
 	└── index.html
-├── src/			# Source files
+├── src/				# Source files
 	├── img/
 	├── js/
 	├── php/
 	├── scss/			# SASS files
-	└── templates/			# Nunjucks HTML templates
+	└── templates/		# Nunjucks HTML templates
 ├── bower.json
 ├── package.json
 ├── gulpfile.js
