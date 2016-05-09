@@ -5,7 +5,7 @@
   "author": "Rex Twedt",
   "license": "MIT",
   "main": "gulpfile.js",
-  "homepage": "https://github.com/CodeAbodeChicago/CodeAbode-Website#readme",
+  "homepage": "https://github.com/retwedt/iiiinc.git#readme",
   "dependencies": {},
   "devDependencies": {
     "express": "^4.13.3",
@@ -28,9 +28,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
+    "url": "git+https://github.com/retwedt/iiiinc.git"
   },
   "bugs": {
-    "url": "https://github.com/CodeAbodeChicago/CodeAbode-Website/issues"
+    "url": "https://github.com/retwedt/iiiinc.git/issues"
   }
 }
