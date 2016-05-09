@@ -26,17 +26,17 @@ var fs = require("fs");
 // BUILD TASKS
 
 gulp.task("img", function () {
-	return gulp.src("source/img/**/*.*")
+	return gulp.src("src/img/**/*.*")
 		.pipe(newer("public/img"))
 		.pipe(gulp.dest("public/img"));
 });
 
 gulp.task("nunjucks", function () {
 	nunjucksRender.nunjucks.configure(
-		["source/templates/layouts", "source/templates/partials"], 
+		["src/templates/layouts", "src/templates/partials"], 
 		{watch: false, autoescape: false}
 	);
-	return gulp.src("source/templates/pages/**/*.nunjucks")
+	return gulp.src("src/templates/pages/**/*.nunjucks")
 		.pipe(nunjucksRender())
 		.pipe(gulp.dest("public"))
 		.pipe(liveReload());
@@ -54,7 +54,7 @@ gulp.task("sass", function () {
 	});
 	sassStream.on("error", sass.logError);
 
-	return gulp.src("source/scss/**/*.scss")
+	return gulp.src("src/scss/**/*.scss")
 		.pipe(sourcemaps.init())
 			.pipe(sassStream)
 			.pipe(autoprefixer({
@@ -87,7 +87,7 @@ gulp.task("vendor-js", function() {
 
 // Uglify and sourcemap custom JS for the project into public/js/all.js
 gulp.task("js", function() {
-	return gulp.src("source/js/**/*.js")
+	return gulp.src("src/js/**/*.js")
 		.pipe(sourcemaps.init())
 			// .pipe(concat("all.js")) Disabling so separate pages can have separate JS!
 			.pipe(uglify())
@@ -110,9 +110,9 @@ gulp.task("build", [
 // Watch for changes to HTML/SASS files and start a liveReload server
 gulp.task("watch", function () {
 	liveReload.listen();
-	gulp.watch("source/js/**/*.js", ["js"]);
-	gulp.watch("source/scss/**/*.scss", ["sass"]);
-	gulp.watch("source/templates/**/*.nunjucks", ["nunjucks"]);
+	gulp.watch("src/js/**/*.js", ["js"]);
+	gulp.watch("src/scss/**/*.scss", ["sass"]);
+	gulp.watch("src/templates/**/*.nunjucks", ["nunjucks"]);
 });
 
 // Start an express server that serves public/ to localhost:8080
